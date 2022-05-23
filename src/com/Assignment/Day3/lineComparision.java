@@ -41,15 +41,25 @@ public class lineComparision {
         System.out.println(" ");
         double diff_P = p2 - p1;
         double diff_Q = q2 - q1;
-        length2 = Math.sqrt((Math.pow(diff_P, 2) + Math.pow(diff_Q, 2)));
+        length2 = Math.sqrt(( Math.pow(diff_P, 2 ) + Math.pow( diff_Q, 2 )));
         System.out.println("Length of the Line-2 :"+length2);
 
-        if(Objects.equals(length1,length2))
-        {
+        if (Objects.equals(length1,length2)) {
             System.out.println("Both line 1 and 2 are equal");
         }
         else{
             System.out.println(("Lines are not equal"));
         }
+
+        String length1_str = String.valueOf(length1);
+        String length2_str = String.valueOf(length2);
+
+        int length_Compare = length1_str.compareTo(length2_str);
+        if (length_Compare == 0) {
+            System.out.println("The both lines are equal ");
+        }       else if (length_Compare > 0) {
+                    System.out.println("The lines 1 is greater than line 2");
+                }       else
+                            System.out.println("The line 2 is greater than line 1");
     }
 }
