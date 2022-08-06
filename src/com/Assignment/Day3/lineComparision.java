@@ -20,7 +20,7 @@ public class lineComparision {
         System.out.print("Enter y2 point : ");
         y2 = sc.nextInt();
 
-        System.out.println(" ");
+        System.out.println("........................................");
         double diff_X = x2 - x1;
         double diff_Y = y2 - y1;
         length1 = Math.sqrt((Math.pow(diff_X, 2) + Math.pow(diff_Y, 2)));
